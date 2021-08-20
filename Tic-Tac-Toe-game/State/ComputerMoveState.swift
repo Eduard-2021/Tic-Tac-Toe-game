@@ -1,17 +1,18 @@
 //
-//  PlayerGameState.swift
-//  XO-game
+//  ComputerMoveState.swift
+//  Tic-Tac-Toe-game
 //
-//  Created by Veaceslav Chirita on 16.08.2021.
+//  Created by Eduard on 19.08.2021.
 //  Copyright © 2021 plasmon. All rights reserved.
 //
 
+
 import Foundation
 
-class PlayerGameState: PlayGameState {
+class ComputerMoveState: PlayGameState {
     var isMoveCompleted: Bool = false
     
-    public let player: Player
+    public var player: Player
     
     private(set) weak var gameViewController: GameViewController?
     private(set) weak var gameBoard: Gameboard?
@@ -28,22 +29,24 @@ class PlayerGameState: PlayGameState {
     
     
     func addSign(at position: GameboardPosition) {
+        var isComputerWent = false
+        while !isComputerWent {
+            //Генерация случайной позиции
+            let positionSelectedComputer = GenerationRandomPosition().funcGenerationRandomPosition()
+            //Проверка не занята ли эта позиция и сразу размещение нолика, которым играет компьютер
+            isComputerWent = onlyAddSing(at: positionSelectedComputer)
+        }
+        isMoveCompleted = true
+    }
+    
+    private func onlyAddSing(at position: GameboardPosition) -> Bool {
         guard let gameBoardView = gameBoardView,
               gameBoardView.canPlaceMarkView(at: position)
-        else { return }
-        
-//        let markView: MarkView
-//        switch player {
-//        case .first:
-//            markView = XView()
-//        case .second:
-//            markView = OView()
-//        }
-        
+        else { return false}
         gameBoard?.setPlayer(player, at: position)
         Logger.shared.log(action: .playerSetSign(player: player, position: position))
         gameBoardView.placeMarkView(markView.copy(), at: position)
-        isMoveCompleted = true
+        return true
     }
     
     func begin() {

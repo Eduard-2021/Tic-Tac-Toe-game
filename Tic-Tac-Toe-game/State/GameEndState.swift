@@ -26,7 +26,20 @@ class GameEndState: PlayGameState {
         
         if let winnerPlayer = winnerPlayer {
             Logger.shared.log(action: .gameFinished(won: winnerPlayer))
-            gameViewController?.winnerLabel.text = setPlayerName(player: winnerPlayer) + " won"
+            switch gameViewController?.typeOfGame {
+            case .gameAgainstHuman, .blindGame:
+                gameViewController?.winnerLabel.text = setPlayerName(player: winnerPlayer) + " won"
+            case .gameAgainstComputer:
+                if winnerPlayer == .first {
+                gameViewController?.winnerLabel.text = "Human won"
+                }
+                else {
+                    gameViewController?.winnerLabel.text = "Computer won"
+                }
+            case .none:
+                break
+            }
+            
         } else {
             Logger.shared.log(action: .gameFinished(won: nil))
             gameViewController?.winnerLabel.text = "No winner/Draw"

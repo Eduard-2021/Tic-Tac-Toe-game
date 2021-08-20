@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230290CC26CF8AA800652DE3 /* GameExecutionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230290CB26CF8AA800652DE3 /* GameExecutionState.swift */; };
+		2341DEFF26CD7B810061C807 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2341DEFE26CD7B810061C807 /* MenuViewController.swift */; };
+		2341DF0726CD7D6E0061C807 /* TypeOfGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2341DF0626CD7D6E0061C807 /* TypeOfGame.swift */; };
+		2341DF1026CD94C80061C807 /* PlayerHumanAndComputer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2341DF0F26CD94C80061C807 /* PlayerHumanAndComputer.swift */; };
+		2341DF1526CDA06D0061C807 /* GenerationRandomPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2341DF1426CDA06D0061C807 /* GenerationRandomPosition.swift */; };
+		23FE2DEC26CE64B000F31790 /* ComputerMoveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE2DEB26CE64B000F31790 /* ComputerMoveState.swift */; };
+		23FE2DF226CE9DA400F31790 /* PlayerMakes5MovesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE2DF126CE9DA400F31790 /* PlayerMakes5MovesState.swift */; };
+		23FE2DF726CE9FB000F31790 /* FiveMovesInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE2DF626CE9FB000F31790 /* FiveMovesInvoker.swift */; };
+		23FE2DFA26CE9FC000F31790 /* FiveMovesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE2DF926CE9FC000F31790 /* FiveMovesCommand.swift */; };
 		BAF3CE4E26CAD56B003F50B1 /* PlayGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3CE4D26CAD56B003F50B1 /* PlayGameState.swift */; };
 		BAF3CE5026CAD5BB003F50B1 /* GameEndState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3CE4F26CAD5BB003F50B1 /* GameEndState.swift */; };
-		BAF3CE5226CAD72B003F50B1 /* PlayerGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3CE5126CAD72B003F50B1 /* PlayerGameState.swift */; };
+		BAF3CE5226CAD72B003F50B1 /* HumanMoveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3CE5126CAD72B003F50B1 /* HumanMoveState.swift */; };
 		BAF3CE5526CAEA1F003F50B1 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3CE5426CAEA1F003F50B1 /* Prototype.swift */; };
 		BAF3CE5826CAEEC2003F50B1 /* LogAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3CE5726CAEEC2003F50B1 /* LogAction.swift */; };
 		BAF3CE5A26CAEF1A003F50B1 /* LogReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3CE5926CAEF1A003F50B1 /* LogReceiver.swift */; };
@@ -33,9 +42,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230290CB26CF8AA800652DE3 /* GameExecutionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameExecutionState.swift; sourceTree = "<group>"; };
+		2341DEFE26CD7B810061C807 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2341DF0626CD7D6E0061C807 /* TypeOfGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfGame.swift; sourceTree = "<group>"; };
+		2341DF0F26CD94C80061C807 /* PlayerHumanAndComputer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerHumanAndComputer.swift; sourceTree = "<group>"; };
+		2341DF1426CDA06D0061C807 /* GenerationRandomPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationRandomPosition.swift; sourceTree = "<group>"; };
+		23FE2DEB26CE64B000F31790 /* ComputerMoveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerMoveState.swift; sourceTree = "<group>"; };
+		23FE2DF126CE9DA400F31790 /* PlayerMakes5MovesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMakes5MovesState.swift; sourceTree = "<group>"; };
+		23FE2DF626CE9FB000F31790 /* FiveMovesInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveMovesInvoker.swift; sourceTree = "<group>"; };
+		23FE2DF926CE9FC000F31790 /* FiveMovesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveMovesCommand.swift; sourceTree = "<group>"; };
 		BAF3CE4D26CAD56B003F50B1 /* PlayGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameState.swift; sourceTree = "<group>"; };
 		BAF3CE4F26CAD5BB003F50B1 /* GameEndState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEndState.swift; sourceTree = "<group>"; };
-		BAF3CE5126CAD72B003F50B1 /* PlayerGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGameState.swift; sourceTree = "<group>"; };
+		BAF3CE5126CAD72B003F50B1 /* HumanMoveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanMoveState.swift; sourceTree = "<group>"; };
 		BAF3CE5426CAEA1F003F50B1 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		BAF3CE5726CAEEC2003F50B1 /* LogAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogAction.swift; sourceTree = "<group>"; };
 		BAF3CE5926CAEF1A003F50B1 /* LogReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogReceiver.swift; sourceTree = "<group>"; };
@@ -71,12 +89,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2341DF1326CDA01F0061C807 /* SupportingMethods */ = {
+			isa = PBXGroup;
+			children = (
+				2341DF1426CDA06D0061C807 /* GenerationRandomPosition.swift */,
+			);
+			path = SupportingMethods;
+			sourceTree = "<group>";
+		};
+		23FE2DF426CE9EB400F31790 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				BAF3CE5726CAEEC2003F50B1 /* LogAction.swift */,
+				BAF3CE5926CAEF1A003F50B1 /* LogReceiver.swift */,
+				BAF3CE5B26CAEF3E003F50B1 /* LogCommand.swift */,
+				BAF3CE5D26CAEFEA003F50B1 /* LogInvoker.swift */,
+				BAF3CE5F26CAF0BC003F50B1 /* Logger.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		23FE2DF526CE9ED300F31790 /* 10MovesPlayers */ = {
+			isa = PBXGroup;
+			children = (
+				23FE2DF626CE9FB000F31790 /* FiveMovesInvoker.swift */,
+				23FE2DF926CE9FC000F31790 /* FiveMovesCommand.swift */,
+			);
+			path = 10MovesPlayers;
+			sourceTree = "<group>";
+		};
 		BAF3CE4C26CAD54F003F50B1 /* State */ = {
 			isa = PBXGroup;
 			children = (
 				BAF3CE4D26CAD56B003F50B1 /* PlayGameState.swift */,
 				BAF3CE4F26CAD5BB003F50B1 /* GameEndState.swift */,
-				BAF3CE5126CAD72B003F50B1 /* PlayerGameState.swift */,
+				BAF3CE5126CAD72B003F50B1 /* HumanMoveState.swift */,
+				23FE2DEB26CE64B000F31790 /* ComputerMoveState.swift */,
+				23FE2DF126CE9DA400F31790 /* PlayerMakes5MovesState.swift */,
+				230290CB26CF8AA800652DE3 /* GameExecutionState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -92,11 +142,8 @@
 		BAF3CE5626CAEEB2003F50B1 /* Command */ = {
 			isa = PBXGroup;
 			children = (
-				BAF3CE5726CAEEC2003F50B1 /* LogAction.swift */,
-				BAF3CE5926CAEF1A003F50B1 /* LogReceiver.swift */,
-				BAF3CE5B26CAEF3E003F50B1 /* LogCommand.swift */,
-				BAF3CE5D26CAEFEA003F50B1 /* LogInvoker.swift */,
-				BAF3CE5F26CAF0BC003F50B1 /* Logger.swift */,
+				23FE2DF526CE9ED300F31790 /* 10MovesPlayers */,
+				23FE2DF426CE9EB400F31790 /* Log */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -120,10 +167,12 @@
 		F874E46F2224621100364CAE /* Tic-Tac-Toe-game */ = {
 			isa = PBXGroup;
 			children = (
+				2341DF1326CDA01F0061C807 /* SupportingMethods */,
 				BAF3CE5626CAEEB2003F50B1 /* Command */,
 				BAF3CE5326CAEA11003F50B1 /* Prototype */,
 				BAF3CE4C26CAD54F003F50B1 /* State */,
 				F874E4702224621100364CAE /* AppDelegate.swift */,
+				2341DEFE26CD7B810061C807 /* MenuViewController.swift */,
 				F874E4722224621100364CAE /* GameViewController.swift */,
 				F874E4F02225DFF700364CAE /* Referee.swift */,
 				F874E4E62225CB3F00364CAE /* Models */,
@@ -162,6 +211,8 @@
 				F874E4F22225E0B100364CAE /* GameboardSize.swift */,
 				F874E4F42225E2CD00364CAE /* Gameboard.swift */,
 				F874E4EE2225DE4500364CAE /* Player.swift */,
+				2341DF0626CD7D6E0061C807 /* TypeOfGame.swift */,
+				2341DF0F26CD94C80061C807 /* PlayerHumanAndComputer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,23 +291,32 @@
 				F874E4732224621100364CAE /* GameViewController.swift in Sources */,
 				BAF3CE5E26CAEFEA003F50B1 /* LogInvoker.swift in Sources */,
 				F874E4DD2225C25D00364CAE /* GameboardPosition.swift in Sources */,
+				23FE2DF226CE9DA400F31790 /* PlayerMakes5MovesState.swift in Sources */,
 				F874E4DF2225C76000364CAE /* MarkView.swift in Sources */,
 				F874E4F12225DFF700364CAE /* Referee.swift in Sources */,
-				BAF3CE5226CAD72B003F50B1 /* PlayerGameState.swift in Sources */,
+				BAF3CE5226CAD72B003F50B1 /* HumanMoveState.swift in Sources */,
 				F874E4F52225E2CD00364CAE /* Gameboard.swift in Sources */,
+				23FE2DFA26CE9FC000F31790 /* FiveMovesCommand.swift in Sources */,
+				2341DF1526CDA06D0061C807 /* GenerationRandomPosition.swift in Sources */,
+				230290CC26CF8AA800652DE3 /* GameExecutionState.swift in Sources */,
+				2341DF1026CD94C80061C807 /* PlayerHumanAndComputer.swift in Sources */,
 				F874E4712224621100364CAE /* AppDelegate.swift in Sources */,
 				BAF3CE5026CAD5BB003F50B1 /* GameEndState.swift in Sources */,
 				F874E4E22225CABF00364CAE /* OView.swift in Sources */,
+				2341DEFF26CD7B810061C807 /* MenuViewController.swift in Sources */,
 				BAF3CE4E26CAD56B003F50B1 /* PlayGameState.swift in Sources */,
 				BAF3CE5A26CAEF1A003F50B1 /* LogReceiver.swift in Sources */,
 				BAF3CE5826CAEEC2003F50B1 /* LogAction.swift in Sources */,
 				F874E4F32225E0B100364CAE /* GameboardSize.swift in Sources */,
+				23FE2DEC26CE64B000F31790 /* ComputerMoveState.swift in Sources */,
 				BAF3CE5526CAEA1F003F50B1 /* Prototype.swift in Sources */,
 				BAF3CE6026CAF0BC003F50B1 /* Logger.swift in Sources */,
 				F874E4E42225CB0700364CAE /* XView.swift in Sources */,
+				2341DF0726CD7D6E0061C807 /* TypeOfGame.swift in Sources */,
 				F874E4DB2225C1AC00364CAE /* GameboardView.swift in Sources */,
 				BAF3CE5C26CAEF3E003F50B1 /* LogCommand.swift in Sources */,
 				F874E4EF2225DE4500364CAE /* Player.swift in Sources */,
+				23FE2DF726CE9FB000F31790 /* FiveMovesInvoker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

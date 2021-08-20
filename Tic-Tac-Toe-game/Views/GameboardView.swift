@@ -15,7 +15,7 @@ public class GameboardView: UIView {
     
     public var onSelectPosition: ((GameboardPosition) -> Void)?
     
-    public private(set) var markViewForPosition: [GameboardPosition: MarkView] = [:]
+    public var markViewForPosition: [GameboardPosition: MarkView] = [:]
     
     // MARK: - Constants
     
