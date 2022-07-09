@@ -10,6 +10,13 @@ import UIKit
 
 class MenuViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        } 
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard
                 let gameViewController = segue.destination as? GameViewController
